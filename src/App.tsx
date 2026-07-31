@@ -354,7 +354,7 @@ function CommissionsPage({ onOpenCart, setCHov }: { onOpenCart:()=>void; setCHov
 
   const sendWA = () => {
     const msg = encodeURIComponent(
-      `Hello Joyful Exotic! 🎂\n\nCommission Enquiry:\n\n👤 Name: ${form.name}\n📧 Email: ${form.email}\n📞 Phone: ${form.phone}\n🎉 Occasion: ${form.occasion}\n📅 Date needed: ${form.date}\n👥 Guests: ${form.guests}\n\n📝 Notes:\n${form.notes}\n\nLooking forward to your response!`
+      `Hello Joyful Exotic Cakes N Creams! 🎂\n\nCommission Enquiry:\n\n👤 Name: ${form.name}\n📧 Email: ${form.email}\n📞 Phone: ${form.phone}\n🎉 Occasion: ${form.occasion}\n📅 Date needed: ${form.date}\n👥 Guests: ${form.guests}\n\n📝 Notes:\n${form.notes}\n\nLooking forward to your response!`
     )
     window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank')
     setSent(true)
@@ -614,7 +614,7 @@ export default function App() {
 
   const checkoutWA = () => {
     const lines = items.map(i=>`• ${i.name} ×${i.qty} — ${i.price}`).join('\n')
-    const msg = encodeURIComponent(`Hello Joyful Exotic! 🎂\n\nOrder Request:\n\n${lines}\n\nTotal: ${totalFmt}${note?`\n\nNotes: ${note}`:''}\n\nPlease confirm availability. Thank you!`)
+    const msg = encodeURIComponent(`Hello Joyful Exotic Cakes N Creams! 🎂\n\nOrder Request:\n\n${lines}\n\nTotal: ${totalFmt}${note?`\n\nNotes: ${note}`:''}\n\nPlease confirm availability. Thank you!`)
     window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank')
   }
 
@@ -627,7 +627,7 @@ export default function App() {
       <div style={{ marginBottom:44 }}>
         <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:10, letterSpacing:'0.22em', color:GOLD, textTransform:'uppercase', marginBottom:4 }}>Joyful Exotic</div>
         <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:900, fontSize:20, color:G, letterSpacing:'0.04em', lineHeight:1.15 }}>
-          Cake <span style={{ color:GOLD }}>&amp;</span> Creams
+          Cakes <span style={{ color:GOLD }}>N</span> Creams
         </div>
         <div style={{ width:28, height:1.5, background:`linear-gradient(90deg,${GOLD},transparent)`, marginTop:10 }} />
       </div>
@@ -724,7 +724,7 @@ export default function App() {
         </button>
         {/* Logo */}
         <button onClick={() => go('Home')} style={{ background:'none', border:'none', fontFamily:"'Playfair Display',serif", fontWeight:900, fontSize:15, color:G, letterSpacing:'0.03em', flexShrink:0 }}>
-          Cake <span style={{ color:GOLD }}>&amp;</span> Creams
+          Cakes <span style={{ color:GOLD }}>N</span> Creams
         </button>
         {/* Cart */}
         <CartPill mag={cartMag} />
@@ -768,7 +768,7 @@ export default function App() {
 
           {/* Footer */}
           <footer className="footer-pad" style={{ padding:'32px 64px', borderTop:'1px solid rgba(200,169,110,0.13)', display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:10, background:'rgba(255,255,255,0.12)' }}>
-            <span style={{ fontFamily:"'Playfair Display',serif", fontStyle:'italic', fontSize:13, color:'rgba(27,58,45,0.38)' }}>© 2025 Joyful Exotic Cake &amp; Creams · Lagos</span>
+            <span style={{ fontFamily:"'Playfair Display',serif", fontStyle:'italic', fontSize:13, color:'rgba(27,58,45,0.38)' }}>© 2025 Joyful Exotic Cakes N Creams · Lagos</span>
             <span style={{ fontFamily:"'Inter',sans-serif", fontSize:9, letterSpacing:'0.22em', color:GOLD, textTransform:'uppercase' }}>Crafted with Gold Leaf &amp; Obsession</span>
           </footer>
         </main>
