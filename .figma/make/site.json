@@ -1,0 +1,10 @@
+{
+  "description": "Explore an elegant digital gallery showcasing exquisite cakes and creams, offering personalized commissions and a luxurious shopping experience.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
