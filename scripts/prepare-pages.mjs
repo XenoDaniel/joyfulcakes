@@ -1,4 +1,6 @@
-import { cp, mkdir } from 'node:fs/promises';
+import { cp, mkdir, rm } from 'node:fs/promises';
 
-await mkdir('dist/JoyfulExoticCakeNCream', { recursive: true });
-await cp('dist/assets', 'dist/JoyfulExoticCakeNCream/assets', { recursive: true });
+await rm('pages-dist', { recursive: true, force: true });
+await cp('dist', 'pages-dist', { recursive: true });
+await mkdir('pages-dist/JoyfulExoticCakeNCream', { recursive: true });
+await cp('dist/assets', 'pages-dist/JoyfulExoticCakeNCream/assets', { recursive: true });
